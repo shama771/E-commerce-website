@@ -5,9 +5,25 @@
     
     <script src="https://kit.fontawesome.com/d6922bd0ba.js" crossorigin="anonymous"></script>
     <style>
-        .header,.header-nav,.header-nav-signIn,.header-nav-shop,.header-nav-basket{
+        .header-search{
+            color: aliceblue;
+        }
+        .flex-container1{
             display: flex;
-            /* width: 100; */
+            justify-content: space-around ;
+
+        }
+        .flex-container2{
+            display: flex;
+            justify-content: space-around ;
+        }
+        .flex3{
+            margin-left: 40%;
+        }
+        .header{
+            background-color: rgba(13, 14, 14, 0.815);
+            display: flex;
+            justify-content: space-around;
 
         }
         .red-bag{
@@ -34,6 +50,48 @@
             padding: 0px;
             margin: 0px;
         }
+         .shop-img{
+            width: 100px;
+            height: 20;
+
+        }
+        .flex1,.flex2{
+            justify-content: space-around ;
+        }
+        .a{
+            color: aliceblue;
+            padding: 0px;
+            margin: 0px;
+            border: 0px;
+        }
+        .b{
+            color: aliceblue;
+
+            padding: 0px;
+            margin: 0px;
+            border: 0px;
+        }
+        .header-logo{
+            display: flex;
+            color: rgb(230, 228, 221);
+            padding: 0px;
+            margin: 0px;
+            border: 0px;
+        }
+        .basket-n-0{
+            display: flex;
+            color: aliceblue;
+
+            
+        }
+        div.i{
+         color: orange;
+        }
+        .main-img{
+          width: 75%;
+          margin-left: 15%;
+        }
+        
         
     </style>
         
@@ -42,36 +100,41 @@
       <div class="header">
 
         <div class="header-logo">
-            <a href="shop" class="fa-solid fa-store"></a>
-            <h1>eShop</h1>
+            <i class="fa-solid fa-store"></i>
+            <h1 class="header-logo">eShop</h1>
         </div>
         <div class="header-search">
              <input type="text">
              <i class="fa-solid fa-magnifying-glass"></i>
         </div>
-        <div class="header-nav">
 
             <div class="header-nav-signIn">
-                <td>Hello Guest </td>
-                <br> <h3>Sign In</h3>
+                <p class="b">Hello Guest </p>
+                 <h3 class="b">Sign In</h3>
             </div>
-            <div class="header-nav-shop">
-                 <td>Your</td>
-                  <br> Shop
+            <div class="your-shop">
+                 <p class="a">Your</p>
+                   <h4 class="a">Shop</h4>
+                </div>
+                 <div class="basket-n-0">
+                    <i class="fa-duotone fa-basket-shopping"></i>
+                <h4 class="zero">0</h4>
             </div>
-            <div class="header-nav-basket">
-                <i class="fa-regular fa-basket-shopping"></i>
-                <h4>0</h4>
-                
-            </div>
-        </div>
-    </div>
-
-
-
-
+            </div> 
+            
         
 
+
+       <div class="main-img">
+    <img class="main-img" src="./main page.jpg" alt="This is main page">
+</div> 
+    
+
+  
+
+        
+     <div class="flex-container1">
+        <div class="flex1">
         <p class="red-bag">water proof repellant bag best suitable for both men and women  </p>
         <h4 class="red-bag">11.2$</h4>
         <i class="fa-solid fa-star"></i>
@@ -81,11 +144,11 @@
          
         <img src="./purse img.jpg" alt="this is bag" width="120" height="120">  
         <button class="bagbasket"> add to basket </button><br><br><br><br><br><br>
-         
+    </div>
         
         
         
-       
+       <div class="flex2">
         <p class="micro-oven">conventional micro oven with starter kit </p>
         <h4 class="micro-oven">200$ </h4>
         <i class="fa-solid fa-star"></i>
@@ -97,10 +160,10 @@
         <img src="./Microwave-Oven.png" alt="this is Microwave-Oven img" width="150">
         <button>add to basket</button><br><br><br><br><br><br>
     </div>
-</div>
+    </div>
 
-
-
+        <div class="flex-container2"> 
+            <div class="flex2">
         <p class="book">Best seller book "ALL THE LIGHT WE CANT SEE"</p>
         <h4 class="book">199.9$     <br>    <i class="fa-solid fa-star">        <i class="fa-solid fa-star"></i>
             <i class="fa-solid fa-star"></i>
@@ -109,9 +172,9 @@
             <!-- <i class=""></i> -->
             <img src="./book img.jpg" alt="this is book img" width="170">
             <button>add to basket</button><br><br><br><br><br><br>
-       
+        </div>
 
-            
+         <div class="flex2">
         <p class="speaker">alexa best speaker</p>
         <h4 class="speaker">98.9 <br>        <i class="fa-solid fa-star"></i>
             <i class="fa-solid fa-star"></i>
@@ -121,9 +184,9 @@
         </h4>
      <img src="./alexa speaker.jpg" alt="this is speaker img" width="120">
          <button>add to basket</button><br><br><br><br><br><br>
+        </div>
 
-
-
+         <div class="flex2">
         <p class="iphone">New apple iphone 12inch best seller</p>
         <h4 class="iphone">500$ <br>        <i class="fa-solid fa-star"></i>
             <i class="fa-solid fa-star"></i>
@@ -132,9 +195,10 @@
         </h4>
     <img src="./ipad.jpg" alt="this is ipad img" width="150">
        <button>add to basket</button><br><br><br><br><br><br>
-      
+    </div>
+    </div>
 
-
+         <div class="flex3">
         <p class="tv">Newc samsung tv LED gaming monitor</p>
         <h4 class="tv">300$ <br>        <i class="fa-solid fa-star"></i>
             <i class="fa-solid fa-star"></i>
@@ -143,7 +207,7 @@
         </h4>
             <img src="./samsung led tv.jpg" alt="this is samsung LED TV img" width="150"> 
          <button>add to basket </button><br><br><br><br><br><br>
-        
+        </div>
 
 </body>
 </html>

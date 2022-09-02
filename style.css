@@ -1,0 +1,29 @@
+
+.flex-container{
+    display: flex;
+    height: 900px;
+     align-items: flex-start;
+    /* width: 66%;  */
+    justify-content: flex-end; 
+}
+
+.item1,.item2,.item3 {
+    background-color: blue;
+    padding: 10px;
+    border: 10px solid  coral;
+    /* justify-content: flex-end; */
+
+    width: 20%;
+    
+}
+/* .item1{
+    flex: 1;
+}
+.item2{
+    flex: 1;
+}
+.item3{
+    flex: 1;
+} */
+
+
