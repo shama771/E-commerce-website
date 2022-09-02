@@ -1,0 +1,96 @@
+
+
+<style>
+
+body,html {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  font-size: 16px;
+  /* background-color: var(--main-bg-color); */
+}
+
+/* Navigation bar */
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+.nav-wrapper {
+    display: flex;
+    max-height: 50px;
+}
+
+.logo-text {
+    display: flex;
+    width: 300px;
+    background-color: #e5e5e5;
+    align-items: center;
+}
+.logo-svg {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    margin-right: 10px;
+}
+.brand-logo {
+    text-decoration: none;
+}
+.input-field {
+    display: flex;
+    align-items: center;
+    width: calc(100% - 600px);
+}
+
+input#autocomplete-input {
+    display: block;
+    margin: 0 auto;
+    width: 90%;
+    max-width: 700px;
+    height: 30px;
+}
+.nav-wrapper ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 300px;
+    padding: 0;
+    margin: 0;
+    background-color: #e5e5e5;
+}
+.nav-wrapper ul li {
+    list-style: none;
+    height: 100%;
+    background-color: transparent;
+    line-height: 50px;
+    padding: 0 10px;
+    transition: background-color .3s ease;
+}
+.nav-wrapper ul li:hover {
+    background-color: white;
+}
+.nav-wrapper ul li a {
+    text-decoration: none;
+}
+</style>
+
+
+<nav>
+    <div class="nav-wrapper">
+      <a href="#" class="brand-logo">
+        <div class="logo-text" href="#"><object href="#" class="logo-svg"></object>LOGO</div>
+      </a>
+      <div class="input-field">
+          <input type="text" class="autocomplete z-depth-0" id="autocomplete-input" placeholder="Search.." />
+      </div>
+      <ul class="right">
+        <a href="#">Link 1</a>
+        <a href="#">Link 2</a>
+        <li><a href="#">Link 3</a></li>
+        <li><a href="#">Link 4</a></li>
+      </ul>
+    </div>
+  </nav>
+  
